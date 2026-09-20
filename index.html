@@ -340,6 +340,12 @@
     unlockApp();
   }
 
+  // Password gate temporarily disabled (original password was forgotten and
+  // can't be recovered from the SHA-256 hash above). Remove this block and
+  // set a new GATE_HASH above once you've picked a new password, if you want
+  // the gate back on.
+  unlockApp();
+
   // --- End password gate ---
 
   // --- Smart app launcher: open the native app if it's installed, otherwise
